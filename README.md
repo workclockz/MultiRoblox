@@ -8,3 +8,6 @@ Head to chrome://extensions turn on developer mode if not already, then load unp
 
 You can also easily add cookies to the extension to switch between your accounts
 please fav :)
+
+# Tutorial
+https://streamable.com/wzn3ac

@@ -10,4 +10,4 @@ You can also easily add cookies to the extension to switch between your accounts
 please fav :)
 
 # Tutorial
-https://streamable.com/wzn3ac
+https://vimeo.com/1057593721?share=copy

